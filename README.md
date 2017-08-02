@@ -1,7 +1,7 @@
 # Coding-Style
 This is my coding style.
 
-Some sections are copied from other pages (see [Reference](https://github.com/marc-q/Coding-Style/tree/c_rules#references)) i intend to stick to this file rather than linking to theese pages. Not only could they change but this way im also able to customize the rules.
+Some sections are copied from other pages (see [Reference](/#references)) i intend to stick to this file rather than linking to theese pages. Not only could they change but this way im also able to customize the rules.
 
 ## Indentation
 
