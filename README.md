@@ -1,7 +1,14 @@
 # Coding-Style
 This is my coding style.
 
-Some sections are copied from other pages (see [Reference](#references)) i intend to stick to this file rather than linking to those pages. Not only could they change but this way im also able to customize the rules.
+Some sections are copied from other pages (see [References](#references)) i intend to stick to this file rather than linking to those pages. Not only could they change but this way im also able to customize the rules.
+
+In this article:
+* [Indentation](#indentation)
+* [Tab Characters](#tab-characters)
+* [Braces](#braces)
+* [Whitespace](#whitespace)
+* [References](#references)
 
 ## Indentation
 
