@@ -40,19 +40,19 @@ function (int a)
 {
         ...
 }
-
-// Valid
-int functions (int a)
-{
-        ...
-}
 ```
 
 ```C
 // Invalid
 int
 function (int a) {
+        ...
+}
 
+// Invalid
+int function (int a)
+{
+        ...
 }
 
 // Invalid
