@@ -61,5 +61,32 @@ int function (int a) {
 }
 ```
 
+## Whitespace
+Always put a space before an opening parenthesis but never after:
+
+```C
+// Valid
+if (condition)
+        function_a ();
+
+// Valid
+switch (condition)
+{
+        ...
+}
+```
+
+```C
+// Invalid
+if(condition)
+        function_a ();
+
+// Invalid
+switch ( condition )
+{
+        ...
+}
+```
+
 ## References
 * https://developer.gnome.org/programming-guidelines/stable/c-coding-style.html.en
