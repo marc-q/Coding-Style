@@ -4,7 +4,7 @@ Working on my coding style.
 ## Indentation
 
 ## Tab Characters
-Do not ever change the size of tabs in your editor; leave them as 8 spaces.
+*Do not ever change the size of tabs in your editor;* leave them as 8 spaces.
 
 ## Braces
 Curly braces should not be used for single statement blocks: 
