@@ -38,7 +38,6 @@ for (int i = 0; i < 10; ++i)
 Curly braces should not be used for single statement blocks: 
 
 ```C
-// Valid
 if (condition)
         single_line ();
 else
@@ -62,29 +61,9 @@ Curly braces should always be placed on a new line.
 For function definition they should not add an indentation level:
 
 ```C
-// Valid
 int
 function (int a)
 {
-        ...
-}
-```
-
-```C
-// Invalid
-int
-function (int a) {
-        ...
-}
-
-// Invalid
-int function (int a)
-{
-        ...
-}
-
-// Invalid
-int function (int a) {
         ...
 }
 ```
@@ -113,18 +92,6 @@ if (condition)
 
 // Valid
 switch (condition)
-{
-        ...
-}
-```
-
-```C
-// Invalid
-if(condition)
-        function_a ();
-
-// Invalid
-switch ( condition )
 {
         ...
 }
