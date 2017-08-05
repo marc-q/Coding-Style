@@ -90,17 +90,8 @@ int function (int a) {
 ```
 
 ## Functions
-Functions should be declared by placing the returned value on a separate line from the function name: 
-
-```C
-void
-function (void)
-{
-        ...
-}
-```
-
-The argument list must be broken into a new line for each argument, with the argument names right aligned, taking into account pointers: 
+* Functions should be declared by placing the returned value on a separate line from the function name.
+* The argument list must be broken into a new line for each argument, with the argument names right aligned, taking into account pointers.
 
 ```C
 void
