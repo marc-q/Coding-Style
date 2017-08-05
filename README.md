@@ -8,6 +8,7 @@ In this article:
 * [Indentation](#indentation)
 * [Tab Characters](#tab-characters)
 * [Braces](#braces)
+* [Functions](#functions)
 * [Whitespace](#whitespace)
 * [References](#references)
 
@@ -84,6 +85,29 @@ int function (int a)
 
 // Invalid
 int function (int a) {
+        ...
+}
+```
+
+## Functions
+Functions should be declared by placing the returned value on a separate line from the function name: 
+
+```C
+void
+function (void)
+{
+        ...
+}
+```
+
+The argument list must be broken into a new line for each argument, with the argument names right aligned, taking into account pointers: 
+
+```C
+void
+function (const int  a,
+          const int  b,
+          int       *sum)
+{
         ...
 }
 ```
