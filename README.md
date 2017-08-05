@@ -35,7 +35,8 @@ for (int i = 0; i < 10; ++i)
 *Do not ever change the size of tabs in your editor;* leave them as 8 spaces.
 
 ## Braces
-Curly braces should not be used for single statement blocks: 
+* Curly braces should not be used for single statement blocks.
+* Curly braces should always be placed on a new line.
 
 ```C
 if (condition)
@@ -43,6 +44,13 @@ if (condition)
 else
         single_line ();
 ```
+
+**The “no block for single statements” rule has only four exceptions:**
+1. In GNU style, if either side of an if-else statement has braces, both sides should, to match up indentation.
+2. If the single statement covers multiple lines, e.g. for functions with many arguments, and it is followed by else or else if.
+3. If the condition is composed of many lines.   
+*Note that such long conditions are usually hard to understand. A good practice is to set the condition to a boolean variable, with a good name for that variable. Another way is to move the long condition to a function.*
+4. Nested ifs, in which case the block should be placed on the outermost if.
 
 In general, new blocks should be placed on a new indentation level, like this: 
 
@@ -57,20 +65,10 @@ function_call_b ();
 }
 ```
 
-Curly braces should always be placed on a new line.   
-For function definition they should not add an indentation level:
-
-```C
-int
-function (int a)
-{
-        ...
-}
-```
-
 ## Functions
 * Functions should be declared by placing the returned value on a separate line from the function name.
 * The argument list must be broken into a new line for each argument, with the argument names right aligned, taking into account pointers.
+* While curly braces for function definitions should rest on a new line they should not add an indentation level.
 
 ```C
 void
@@ -83,7 +81,7 @@ function (const int  a,
 ```
 
 ## Whitespace
-Always put a space before an opening parenthesis but never after:
+* Always put a space before an opening parenthesis but never after.
 
 ```C
 // Valid
