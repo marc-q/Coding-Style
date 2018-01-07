@@ -7,6 +7,7 @@ In this article:
 * [Line Width](#line-width)
 * [Indentation](#indentation)
 * [Tab Characters](#tab-characters)
+* [Namespace](#namespace)
 * [Braces](#braces)
 * [Functions](#functions)
 * [Whitespace](#whitespace)
@@ -33,6 +34,13 @@ for (int i = 0; i < 10; ++i)
 
 ## Tab Characters
 *Do not ever change the size of tabs in your editor;* leave them as 8 spaces.
+
+## Namespace
+* Functions should use `lower_case_with_underscores`.
+* Structures, types and objects should use `CamelCaseWithoutUnderscores`.
+* Macros and constants should use `UPPER_CASE_WITH_UNDERSCORES`.
+* All symbols should be prefixed with a short (2–4 characters) version of the namespace. This is shortened purely for ease of typing, but should still be unique.
+* All methods of a class should also be prefixed with the class name.
 
 ## Braces
 * Curly braces should not be used for single statement blocks.
