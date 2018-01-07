@@ -76,6 +76,7 @@ function_call_b ();
 ## Functions
 * Functions should be declared by placing the returned value on a separate line from the function name.
 * The argument list must be broken into a new line for each argument, with the argument names right aligned, taking into account pointers.
+* The argument list order should be: `self`, `input`, `output`.
 * While curly braces for function definitions should rest on a new line they should not add an indentation level.
 
 ```C
