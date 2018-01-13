@@ -91,6 +91,7 @@ function (const int  a,
 
 ## Whitespace
 * Always put a space before an opening parenthesis but never after.
+* Do not eliminate whitespace and newlines just because something would fit on a single line.
 
 ```C
 // Valid
