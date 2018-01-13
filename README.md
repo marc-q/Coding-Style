@@ -106,3 +106,4 @@ switch (condition)
 
 ## References
 * https://developer.gnome.org/programming-guidelines/stable/c-coding-style.html.en
+* https://developer.gnome.org/programming-guidelines/stable/namespacing.html.en
