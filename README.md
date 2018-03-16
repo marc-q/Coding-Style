@@ -11,6 +11,7 @@ In this article:
 * [Functions](#functions)
 * [Comments](#comments)
 * [Namespace](#namespace)
+* [Header Files](#header-files)
 * [References](#references)
 
 ## Line Width
@@ -138,6 +139,17 @@ function (const int  a,
 * Macros and constants should use `UPPER_CASE_WITH_UNDERSCORES`.
 * All symbols should be prefixed with a short (2–4 characters) version of the namespace. This is shortened purely for ease of typing, but should still be unique.
 * All methods of a class should also be prefixed with the class name.
+
+## Header Files
+* The function definitions should be vertically aligned in three columns.
+* The maximum width of each column is given by the longest element in the column.
+* It is also possible to align the columns to the next tab.
+
+```C
+return_type          function_name           (type   argument,
+                                              type   argument,
+                                              type   argument);
+```
 
 ## References
 * https://developer.gnome.org/programming-guidelines/stable/c-coding-style.html.en
