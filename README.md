@@ -141,7 +141,7 @@ function (const int  a,
 * All methods of a class should also be prefixed with the class name.
 
 ## Header Files
-* The function definitions should be vertically aligned in three columns.
+* Function definitions should be vertically aligned in three columns.
 * The maximum width of each column is given by the longest element in the column.
 * It is also possible to align the columns to the next tab.
 
