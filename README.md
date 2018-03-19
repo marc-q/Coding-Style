@@ -141,6 +141,17 @@ function (const int  a,
 * All methods of a class should also be prefixed with the class name.
 
 ## Header Files
+All header files should have #define guards to prevent multiple inclusion. The format of the symbol name should be `__<PROJECT>_<FILE>_H__`.
+
+```C
+#ifndef __FOO_BAR_H__
+#define __FOO_BAR_H__
+
+...
+
+#endif  // __FOO_BAR_H__
+```
+
 * Function definitions should be vertically aligned in three columns.
 * The maximum width of each column is given by the longest element in the column.
 * It is also possible to align the columns to the next tab.
@@ -154,3 +165,4 @@ return_type          function_name           (type   argument,
 ## References
 * https://developer.gnome.org/programming-guidelines/stable/c-coding-style.html.en
 * https://developer.gnome.org/programming-guidelines/stable/namespacing.html.en
+* https://google.github.io/styleguide/cppguide.html
