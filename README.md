@@ -1,24 +1,32 @@
-# Coding-Style
-This is my coding style.
-
-Some sections are copied from other pages (see [References](#references)) i intend to stick to this file rather than linking to those pages. Not only could they change but this way im also able to customize the rules.
+# C Coding Style
+Each Coding Style has its own nouances and needs its own collection of rules.
+Some sections are copied from other pages (see [References](#references)) because i want to organize the rules in one file.
 
 In this article:
 * [Line Width](#line-width)
 * [Indentation](#indentation)
-* [Tab Characters](#tab-characters)
-* [Namespace](#namespace)
-* [Braces](#braces)
+	* [Spaces](#spaces)
+	* [Braces](#braces)
+* [Conditionals](#conditionals)
 * [Functions](#functions)
-* [Whitespace](#whitespace)
+* [Comments](#comments)
+* [Namespace](#namespace)
+* [Header Files](#header-files)
 * [References](#references)
 
 ## Line Width
-Try to use lines of code between 80 and 120 characters long. This amount of text is easy to fit in most monitors with a decent font size. Lines longer than that become hard to read, and they mean that you should probably restructure your code. If you have too many levels of indentation, it means that you should fix your code anyway.
+Try to use lines of code between 80 and 120 characters long.
+This amount of text is easy to fit in most monitors with a decent font size.
+Lines longer than that become hard to read, and they mean that you should probably restructure your code.
+If you have too many levels of indentation, it means that you should fix your code anyway.
+
+Do not eliminate whitespace and newlines just because something would fit on a single line.
 
 ## Indentation
-I like to use the Linux Kernel style for indentation.
-Tabs with a length of 8 characters are used for the indentation. Normaly K&R brace placing is used, but i replaced that with my own.
+Tabs with a length of 8 characters are used for the indentation.
+Each new level is indented by a tab, braces go on a line by themselves.
+
+*Do not ever change the size of tabs in your editor;* leave them as 8 spaces.
 
 ```C
 for (int i = 0; i < 10; ++i)
@@ -32,17 +40,29 @@ for (int i = 0; i < 10; ++i)
 }
 ```
 
-## Tab Characters
-*Do not ever change the size of tabs in your editor;* leave them as 8 spaces.
+### Spaces
+Put one space:
+* After commas.
+* Between operators.
+* Before an opening parenthesis.
 
-## Namespace
-* Functions should use `lower_case_with_underscores`.
-* Structures, types and objects should use `CamelCaseWithoutUnderscores`.
-* Macros and constants should use `UPPER_CASE_WITH_UNDERSCORES`.
-* All symbols should be prefixed with a short (2–4 characters) version of the namespace. This is shortened purely for ease of typing, but should still be unique.
-* All methods of a class should also be prefixed with the class name.
+Remove spaces:
+* In whitespace-only line.
+* Between parentheses and the parameters.
+* Between empty braces, and parentheses.
 
-## Braces
+```C
+function_a ();	// 1 space between function_a and '(', 0 space between parentheses.
+
+if (true)	// 1 space between if and '('.
+{               // 0 space after opening brace-only line.
+	int i = (1 + 2) * 3;	// 1 space around '=', '+' and '*'.
+	
+	function_b (i, 1);	// 1 space between function_b and '(', 1 space after commas. 
+}               // 0 space after closing brace-only line.
+```
+
+### Braces
 * Curly braces should not be used for single statement blocks.
 * Curly braces should always be placed on a new line.
 
@@ -60,7 +80,7 @@ else
 *Note that such long conditions are usually hard to understand. A good practice is to set the condition to a boolean variable, with a good name for that variable. Another way is to move the long condition to a function.*
 4. Nested ifs, in which case the block should be placed on the outermost if.
 
-In general, new blocks should be placed on a new indentation level, like this: 
+In general, new blocks should be placed on a new indentation level, like this:
 
 ```C
 function_call_a ();
@@ -70,6 +90,18 @@ function_call_b ();
         const int type = 1;
         
         fwrite (&type, sizeof (type), 1, f); 
+}
+```
+
+## Conditionals
+`if`, `else`, `for`, `while`, and `switch` statements should be followed by a space.
+
+```C
+if (a == 8)
+	...
+for (;;)
+{
+	...
 }
 ```
 
@@ -89,20 +121,34 @@ function (const int  a,
 }
 ```
 
-## Whitespace
-* Always put a space before an opening parenthesis but never after.
-* Do not eliminate whitespace and newlines just because something would fit on a single line.
+## Comments  
+* Use C++ style for single-line comments.
+* Use C style for multiline comments.
 
 ```C
-// Valid
-if (condition)
-        function_a ();
+// TODO: One line to rule them all`.
 
-// Valid
-switch (condition)
-{
-        ...
-}
+/* A verry long comment broken
+ * into two lines.
+ */
+```
+
+## Namespace
+* Functions should use `lower_case_with_underscores`.
+* Structures, types and objects should use `CamelCaseWithoutUnderscores`.
+* Macros and constants should use `UPPER_CASE_WITH_UNDERSCORES`.
+* All symbols should be prefixed with a short (2–4 characters) version of the namespace. This is shortened purely for ease of typing, but should still be unique.
+* All methods of a class should also be prefixed with the class name.
+
+## Header Files
+* The function definitions should be vertically aligned in three columns.
+* The maximum width of each column is given by the longest element in the column.
+* It is also possible to align the columns to the next tab.
+
+```C
+return_type          function_name           (type   argument,
+                                              type   argument,
+                                              type   argument);
 ```
 
 ## References
