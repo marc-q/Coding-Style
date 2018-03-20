@@ -10,6 +10,8 @@ Contents:
 1.  [Document layout](#document-layout)
 1.  [Line length](#line-length)
 1.  [Lists](#lists)
+    1. [Use lazy numbering for long lists](#use-lazy-numbering-for-long-lists)
+    1. [Nested list spacing](#nested-list-spacing)
 1.  [See also](#see-also)
 
 ## Document layout
