@@ -9,7 +9,7 @@ This is my style guide for the Markdown language.
 Contents:
 1.  [Document layout](#document-layout)
 1.  [Line length](#line-length)
-1.  [Lists)(#lists)
+1.  [Lists](#lists)
 1.  [See also](#see-also)
 
 ## Document layout
