@@ -9,6 +9,7 @@ This is my style guide for the Markdown language.
 Contents:
 1.  [Document layout](#document-layout)
 1.  [Line length](#line-length)
+1.  [Lists)(#lists)
 1.  [See also](#see-also)
 
 ## Document layout
@@ -53,6 +54,48 @@ Content.
 
 Try to use lines of code between 80 and 120 characters long. This amount of text
 is easy to fit in most monitors with a decent font size.
+
+## Lists
+
+### Use lazy numbering for long lists
+
+Markdown is smart enough to let the resulting HTML render your numbered lists
+correctly. For longer lists that may change, especially long nested lists, use
+"lazy" numbering:
+
+```markdown
+1.  Foo.
+1.  Bar.
+    1.  Foofoo.
+    1.  Barbar.
+1.  Baz.
+```
+
+However, if the list is small and you don't anticipate changing it, prefer fully
+numbered lists, because it's nicer to read in source:
+
+```markdown
+1.  Foo.
+2.  Bar.
+3.  Baz.
+```
+
+### Nested list spacing
+
+When nesting lists, use a 4 space indent for both numbered and bulleted lists:
+
+```markdown
+1.  2 spaces after a numbered list.
+    4 space indent for wrapped text.
+2.  2 spaces again.
+
+*   3 spaces after a bullet.
+    4 space indent for wrapped text.
+    1.  2 spaces after a numbered list.
+        8 space indent for the wrapped text of a nested list.
+    2.  Looks nice, don't it?
+*   3 spaces after a bullet.
+```
 
 ## See also
 
