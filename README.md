@@ -2,17 +2,17 @@
 Each Coding Style has its own nouances and needs its own collection of rules.
 Some sections are copied from other pages (see [References](#references)) because i want to organize the rules in one file.
 
-In this article:
-* [Line Width](#line-width)
-* [Indentation](#indentation)
-	* [Spaces](#spaces)
-	* [Braces](#braces)
-* [Conditionals](#conditionals)
-* [Functions](#functions)
-* [Comments](#comments)
-* [Namespace](#namespace)
-* [Header Files](#header-files)
-* [References](#references)
+Contents:
+1.  [Line Width](#line-width)
+1.  [Indentation](#indentation)
+    1.  [Spaces](#spaces)
+    1.  [Braces](#braces)
+1.  [Conditionals](#conditionals)
+1.  [Functions](#functions)
+1.  [Comments](#comments)
+1.  [Namespace](#namespace)
+1.  [Header Files](#header-files)
+1.  [References](#references)
 
 ## Line Width
 Try to use lines of code between 80 and 120 characters long.
