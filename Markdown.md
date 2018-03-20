@@ -8,9 +8,11 @@ This is my style guide for the Markdown language.
 
 Contents:
 1.  [Document layout](#document-layout)
+1.  [Line length](#line-length)
 1.  [See also](#see-also)
 
 ## Document layout
+
 In general, most documents benefit from some variation of the following layout:
 
 ```Markdown
@@ -27,6 +29,7 @@ Contents:
 Content.
 
 ## See also
+
 * https://link-to-more-info
 ```
 
@@ -46,5 +49,11 @@ Content.
 1.  `## See also`: Put miscellaneous links at the bottom for the user who wants
     to know more or didn't find what she needed.
 
+## Line length
+
+Try to use lines of code between 80 and 120 characters long. This amount of text
+is easy to fit in most monitors with a decent font size.
+
 ## See also
+
 * https://github.com/google/styleguide/blob/gh-pages/docguide/style.md
